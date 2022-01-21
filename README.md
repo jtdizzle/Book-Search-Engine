@@ -1,4 +1,4 @@
-# 21 MERN: Book Search Engine
+#  Book Search Engine
 
 
 ## Description
@@ -22,7 +22,7 @@
   Download files from github, open in console/node. Run NPM install to install . To run on Heroku, use Heroku create, and connect Heroku to MongoDB database.
   
   ## Usage
-  Run npm start to run server locally, or connect to HEROKU. Type in name of 
+  Run npm start to run server locally, or connect to HEROKU. 
 
 
   ## License
