@@ -1,115 +1,62 @@
-# Book-Search-Engine
- The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end. 
+# 21 MERN: Book Search Engine
 
 
-## Getting Started
+## Description
 
-In order for this application to use a GraphQL API, you’ll need to refactor the API to use GraphQL on the back end and add some functionality to the front end. The following sections contain details about the files you’ll need to modify on the back end and the front end.
-
-**Important**: Make sure to study the application before building upon it. Better yet, start by making a copy of it. It's already a working application&mdash;you're converting it from RESTful API practices to a GraphQL API.
-
-### Back-End Specifications
-
-You’ll need to complete the following tasks in each of these back-end files:
-
-* `auth.js`: Update the auth middleware function to work with the GraphQL API.
-
-* `server.js`: Implement the Apollo Server and apply it to the Express server as middleware.
-
-	> **Important**: Apollo Server recently migrated to Apollo Server 3. This major-version release impacts how Apollo Server interacts in an Express environment. To implement Apollo Server 2 as demonstrated in the activities, you **MUST** use the following script `npm install apollo-server-express@2.15.0` to install Apollo Server 2. Alternately, to migrate to the latest version of Apollo Server, please refer to the [Apollo Server Docs on Migrating to Apollo Server 3](https://www.apollographql.com/docs/apollo-server/migration/#nodejs) and [Apollo Server Docs on Implementing Apollo Server Express with v3](https://www.apollographql.com/docs/apollo-server/integrations/middleware/#apollo-server-express). Note that if you are using Apollo Server 3 you are required use `await server.start()` before calling `server.applyMiddleware`.
-
-* `Schemas` directory:
-
-	* `index.js`: Export your typeDefs and resolvers.
-
-	* `resolvers.js`: Define the query and mutation functionality to work with the Mongoose models.
-
-		**Hint**: Use the functionality in the `user-controller.js` as a guide.
-
-	* `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
-
-		* `Query` type:
-
-			* `me`: Which returns a `User` type.
-		
-		* `Mutation` type:
-
-			* `login`: Accepts an email and password as parameters; returns an `Auth` type.
-
-			* `addUser`: Accepts a username, email, and password as parameters; returns an `Auth` type.
-
-			* `saveBook`: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)
-
-			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type.
-			
-		* `User` type:
-
-			* `_id`
-
-			* `username`
-
-			* `email`
-
-			* `bookCount`
-
-			* `savedBooks` (This will be an array of the `Book` type.)
-
-		* `Book` type:
-
-			* `bookId` (Not the `_id`, but the book's `id` value returned from Google's Book API.)
-
-			* `authors` (An array of strings, as there may be more than one author.)
-
-			* `description`
-
-			* `title`
-
-			* `image`
-
-			* `link`
-
-		* `Auth` type:
-
-			* `token`
-
-			* `user` (References the `User` type.)
+  Refactored book-search application
+  
+  
+  ## Table of Contents 
+  
+  
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contribution](#contribution)
+  - [Questions](#questions)
+  - [Credits](#credits)
+  
+  
+  ## Installation
+  Download files from github, open in console/node. Run NPM install to install . To run on Heroku, use Heroku create, and connect Heroku to MongoDB database.
+  
+  ## Usage
+  Run npm start to run server locally, or connect to HEROKU. Type in name of 
 
 
-### Front-End Specifications
+  ## License
+  MIT License
 
-You'll need to create the following front-end files:
+  [![license](https://img.shields.io/badge/license-MITLicense-blue)](https://shields.io)
 
-* `queries.js`: This will hold the query `GET_ME`, which will execute the `me` query set up using Apollo Server.
 
-* `mutations.js`:
+  ---
+  
+  
+  
 
-	* `LOGIN_USER` will execute the `loginUser` mutation set up using Apollo Server.
+  ## Questions
+  Github Profile: www.github.com/jtdizzle
+  Email: jtdizzle747@yahoo.com
 
-	* `ADD_USER` will execute the `addUser` mutation.
+ 
+  ## Additional Info
+  Technologies:
+  -Node.js
+  -Mongoose/MongoDB
+  -Apollo-client
+  -Express
+  -Mongoose/MongoDB
+  -Apollo-client
+  -Heroku
+  
 
-	* `SAVE_BOOK` will execute the `saveBook` mutation.
+  ## Credits:
 
-	* `REMOVE_BOOK` will execute the `removeBook` mutation.
+  Jonathan Taylor
 
-Additionally, you’ll need to complete the following tasks in each of these front-end files:
-
-* `App.js`: Create an Apollo Provider to make every request work with the Apollo Server.
-	
-* `SearchBooks.js`:
-
-	* Use the Apollo `useMutation()` Hook to execute the `SAVE_BOOK` mutation in the `handleSaveBook()` function instead of the `saveBook()` function imported from the `API` file.
-
-	* Make sure you keep the logic for saving the book's ID to state in the `try...catch` block! 
-
-* `SavedBooks.js`:
-
-	* Remove the `useEffect()` Hook that sets the state for `UserData`.
-
-	* Instead, use the `useQuery()` Hook to execute the `GET_ME` query on load and save it to a variable named `userData`.
-
-	* Use the `useMutation()` Hook to execute the `REMOVE_BOOK` mutation in the `handleDeleteBook()` function instead of the `deleteBook()` function that's imported from `API` file. (Make sure you keep the `removeBookId()` function in place!)
-
-* `SignupForm.js`: Replace the `addUser()` functionality imported from the `API` file with the `ADD_USER` mutation functionality.
-
-* `LoginForm.js`: Replace the `loginUser()` functionality imported from the `API` file with the `LOGIN_USER` mutation functionality.
-
+  [Github Repo](https://github.com/jtdizzle/Book-Search-Engine "Github Repo")
+  
+  
+  [Deployed Heroku Application](https://.herokuapp.com/ "Heroku app");
