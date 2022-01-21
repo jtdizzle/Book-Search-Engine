@@ -1,0 +1,19 @@
+{
+  "name": "book-search-engine",
+  "version": "1.0.0",
+  "description": "booook searcher",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtdizzle/Book-Search-Engine.git"
+  },
+  "author": "Jonathan Taylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtdizzle/Book-Search-Engine/issues"
+  },
+  "homepage": "https://github.com/jtdizzle/Book-Search-Engine#readme"
+}
