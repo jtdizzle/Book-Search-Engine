@@ -61,4 +61,4 @@
   [Github Repo](https://github.com/jtdizzle/Book-Search-Engine "Github Repo")
   
   
-  [Deployed Heroku Application](https://bookidy-book-book-engine.herokuapp.com/ "Heroku app");
+  [Deployed Heroku Application](https://bookidy-book-book-engine.herokuapp.com "Heroku app");
