@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/jtdizzle/Book-Search-Engine/issues"
   },
-  "homepage": "https://github.com/jtdizzle/Book-Search-Engine#readme"
+  "homepage": "https://github.com/jtdizzle/Book-Search-Engine#readme",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.13.0"
+  }
 }
