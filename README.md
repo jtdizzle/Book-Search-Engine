@@ -19,16 +19,15 @@
   
   
   ## Installation
-<<<<<<< HEAD
+
   Download files from github, open in console/node. Run NPM install to install . 
-=======
+
   Download files from github, open in console/node.  
   Run NPM install to install.  
->>>>>>> c6377ed375bdd046aa178d49fd96d92b24836409
-  To run on Heroku, use Heroku create, and connect Heroku to MongoDB database.
   
   ## Usage
-  Run npm start to run server locally, or connect to HEROKU. 
+  Run npm start to run server locally, or connect to HEROKU.  
+  To run on Heroku, use Heroku create, and connect Heroku to MongoDB database.
 
 
   ## License
