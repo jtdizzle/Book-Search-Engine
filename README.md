@@ -1,4 +1,4 @@
-# 21 MERN: Book Search Engine
+#  Book Search Engine
 
 
 ## Description
@@ -19,11 +19,16 @@
   
   
   ## Installation
+<<<<<<< HEAD
   Download files from github, open in console/node. Run NPM install to install . 
+=======
+  Download files from github, open in console/node.  
+  Run NPM install to install.  
+>>>>>>> c6377ed375bdd046aa178d49fd96d92b24836409
   To run on Heroku, use Heroku create, and connect Heroku to MongoDB database.
   
   ## Usage
-  Run npm start to run server locally, or connect to HEROKU. Type in name of 
+  Run npm start to run server locally, or connect to HEROKU. 
 
 
   ## License
@@ -38,7 +43,7 @@
   
 
   ## Questions
-  Github Profile: www.github.com/jtdizzle
+  Github Profile: www.github.com/jtdizzle  
   Email: jtdizzle747@yahoo.com
 
  
@@ -57,4 +62,4 @@
   [Github Repo](https://github.com/jtdizzle/Book-Search-Engine "Github Repo")
   
   
-  [Deployed Heroku Application](https://.herokuapp.com/ "Heroku app");
+  [Deployed Heroku Application](https://bookidy-book-book-engine.herokuapp.com "Heroku app");
