@@ -19,7 +19,8 @@
   
   
   ## Installation
-  Download files from github, open in console/node. Run NPM install to install . To run on Heroku, use Heroku create, and connect Heroku to MongoDB database.
+  Download files from github, open in console/node. Run NPM install to install . 
+  To run on Heroku, use Heroku create, and connect Heroku to MongoDB database.
   
   ## Usage
   Run npm start to run server locally, or connect to HEROKU. Type in name of 
@@ -47,9 +48,6 @@
   -Mongoose/MongoDB
   -Apollo-client
   -Express
-  -Mongoose/MongoDB
-  -Apollo-client
-  -Heroku
   
 
   ## Credits:
